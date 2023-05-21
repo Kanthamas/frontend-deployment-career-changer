@@ -9,6 +9,7 @@ function App() {
 
   useEffect(() => {
     const backend = import.meta.env.VITE_BACKEND_URL;
+    console.log(backend);
     const fetchData = async () => {
       await axios.get(`${backend}/users`);
     };
